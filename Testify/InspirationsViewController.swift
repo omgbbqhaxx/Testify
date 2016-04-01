@@ -20,9 +20,9 @@ class InspirationsViewController: UICollectionViewController {
             
             
             
-            if let patternImage = UIImage(named: "Pattern") {
-                view.backgroundColor = UIColor(patternImage: patternImage)
-            }
+          
+            
+            
             collectionView!.backgroundColor = UIColor.clearColor()
             collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
         }

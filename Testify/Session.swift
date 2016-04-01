@@ -13,7 +13,6 @@ class Session {
   var backgroundImage: UIImage
   
   init(title: String, backgroundImage: UIImage) {
-    print("imhere")
     self.title = title
     self.backgroundImage = backgroundImage
     

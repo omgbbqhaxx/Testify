@@ -13,14 +13,13 @@ class Inspiration: Session {
   class func allInspirations() -> [Inspiration] {
     var inspirations = [Inspiration]()
     
-    let products = [["Title": "Kahvelerrr", "Background": "kahve"],["Title": "Pizzalar", "Background": "pizzalar"],["Title": "Salatalar", "Background": "salatalar"],["Title": "Tatlılar", "Background": "tatli"]]
+    let products = [["Title": "Kahveler", "Background": "kahve"],["Title": "Pizzalar", "Background": "pizzalar"],["Title": "Salatalar", "Background": "salatalar"],["Title": "Tatlılar", "Background": "tatli"]]
     
 
 
         for dictionary in products {
           let inspiration = Inspiration(dictionary: dictionary as NSDictionary)
-            print(inspiration.title)
-            print(inspiration.backgroundImage)
+           
          
           inspirations.append(inspiration)
         }

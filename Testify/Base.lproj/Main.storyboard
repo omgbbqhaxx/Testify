@@ -14,6 +14,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewLayout key="collectionViewLayout" id="Lcf-zv-jfJ" customClass="UltravisualLayout" customModule="Testify" customModuleProvider="target"/>
+                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" id="Rwl-B6-neo">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InspirationCell" id="nw5-fn-akC" customClass="InspirationCell" customModule="Testify" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -74,7 +78,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqG-1u-lYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224" y="455"/>
+            <point key="canvasLocation" x="410" y="448"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wzH-6T-L4V">
@@ -93,7 +97,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sn8-q7-b8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="455"/>
+            <point key="canvasLocation" x="960" y="455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg.png" width="3240" height="5760"/>
+    </resources>
 </document>
