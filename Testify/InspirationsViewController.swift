@@ -8,19 +8,24 @@
 
 import UIKit
 
+let foodlistarr = [["Title": "Cofeescript", "Background": "kahve"],["Title": "Pizzalar", "Background": "pizzalar"],["Title": "Salatalar", "Background": "salatalar"],["Title": "Tatlılar", "Background": "tatli"]]
+
+
 class InspirationsViewController: UICollectionViewController {
     
-        let inspirations = Inspiration.allInspirations()
+    
+
+    let inspirations = Inspiration.allInspirations(myarr:foodlistarr)
+    
+    
+    
+    
         override func preferredStatusBarStyle() -> UIStatusBarStyle {
             return UIStatusBarStyle.LightContent
         }
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            
-            
-            
-          
             
             
             collectionView!.backgroundColor = UIColor.clearColor()

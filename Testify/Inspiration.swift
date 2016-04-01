@@ -8,17 +8,18 @@
 
 import UIKit
 
+
+
 class Inspiration: Session {
-  
-  class func allInspirations() -> [Inspiration] {
+    
+    class func allInspirations(myarr foodlist:NSArray) -> [Inspiration] {
+        
     var inspirations = [Inspiration]()
-    
-    let products = [["Title": "Kahveler", "Background": "kahve"],["Title": "Pizzalar", "Background": "pizzalar"],["Title": "Salatalar", "Background": "salatalar"],["Title": "Tatlılar", "Background": "tatli"]]
-    
+        
 
 
-        for dictionary in products {
-          let inspiration = Inspiration(dictionary: dictionary as NSDictionary)
+        for dictionary in foodlist {
+          let inspiration = Inspiration(dictionary: dictionary as! NSDictionary)
            
          
           inspirations.append(inspiration)
